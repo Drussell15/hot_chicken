@@ -3,9 +3,11 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 const path = require("path");
+const http = require("http");
+
 
 // Data
-const tables = [{
+const reservations = [{
     name:
     number:
     email:
@@ -20,20 +22,6 @@ const waitList = [{
 }];
 
 
-app.get("/", function(req, res) {
-    // add html file
-    res.send();
-  });
-  
-  app.get("/viewTables", function(req, res) {
-    // add html file
-    res.send();
-  });
-
-app.get("/reservations/tables", function(req, res) {
-        // add html file
-    return res.send();
-  });
 
 
 
