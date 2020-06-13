@@ -1,0 +1,30 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+  }
+
+  .fa-fire {
+      padding-right: 10px;
+  }
+  
+  .jumbotron {
+      text-align: center;
+     
+  }
+  
+  .display-4 {
+      font-weight: bold;
+
+  }
+  .lead {
+      font-weight: bold;
+  }
+  
+  #res {
+      background-color: red;
+  }
