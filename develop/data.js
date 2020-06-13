@@ -42,12 +42,12 @@ function handleRequest(req, res) {
 
     app.get("/viewTables", function (req, res) {
       // add html file
-      res.sendFile(path.join(__dirname, "view", ".html"));
+      res.sendFile(path.join(__dirname, "view", "tables.html"));
     });
 
     app.get("/reservations", function (req, res) {
       // add html file
-      res.sendFile(path.join(__dirname, "view", ".html"));
+      res.sendFile(path.join(__dirname, "view", "reservation.html"));
     });
   })
   app.listen(PORT, function () {
