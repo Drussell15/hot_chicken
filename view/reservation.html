@@ -60,10 +60,21 @@
     </div>
 
     <script type="text/javascript">
-        $('#submit-button').on('click', function () {
-            let resName = $('#reserve-name').val().trim();
-            resName = resName.replace(/\s+/g, "").toLowerCase();
-        })
+        $('#submit-button').on('click', function (event) {
+            event.preventDefault();
+            const newRes = {
+                name: $('#reserve-name').val().trim(),
+                phoneNumber: $('#reserve-phone-number').val().trim(),
+                email = $('#reserve-email').val().trim(),
+                uniqueID = $('#reserve-unique-id').val().trim()
+            };
+        
+
+        $.post(__dirname, "develop", "data" function() {
+
+        });
+
+        });
 
 
     </script>
@@ -80,5 +91,3 @@
 </body>
 
 </html>
-
-<script></script>
