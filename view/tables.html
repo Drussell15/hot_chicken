@@ -47,8 +47,12 @@
 <script type="text/javascript">
 
 function getList(){
-    ajax({url:"", method:"Get"})
-}
+    ajax({url:"", method:"Get"}).then(function(tableData){
+
+    console.log(tableData)
+});
+};
+for (let i = 0; i < tableData.length; i++) {
 
 
 
